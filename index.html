@@ -45,11 +45,11 @@
             </h1>
         </div>
         <div class="flex  items-center gap-9">
-            <div class="flex items-center gap-2 rounded-full p-4 bg-[#F4F7FF]">
+            <div class="flex items-center gap-4 rounded-full py-3 px-5 bg-[#F4F7FF]">
                 <img src="assets/checkbox.png" alt="">
-                <h2 class="text-3xl font-bold">23</h2>
+                <h2 id="total-completed-task" class="text-3xl font-bold">23</h2>
             </div>
-            <div class="rounded-full p-4 bg-[#F4F7FF]">
+            <div class="rounded-full p-3 bg-[#F4F7FF]">
                 <img src="assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="">
                             <p class="font-medium">Task Assigned</p>
-                            <h3 id="" class="font-bold text-3xl">05</h3>
+                            <h3 id="task-assigned" class="font-bold text-3xl">06</h3>
                         </div>
                     </div>
                     <div class="grow flex items-center gap-4 rounded-xl p-8 bg-gradient-to-r from-blue-600 to-blue-400">
@@ -88,8 +88,8 @@
                             <img class="w-7" src="assets/calender.png" alt="">
                         </div>
                         <div class="">
-                            <p class="">wed</p>
-                            <p class="font-bold text-2xl">jul 28 2025</p>
+                            <p id="current-day" class="text-2xl">Wed,</p>
+                            <p id="current-date" class="font-semibold text-2xl">jul 28 2025</p>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">CloudSync</p>
                         <h3 class="font-medium text-2xl">Add Dark Mode</h3>
-                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 overflow-hidden">
+                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                         </p>
                         <div class="flex justify-between">
@@ -130,7 +130,7 @@
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">SwiftPay</p>
                         <h3 class="font-medium text-2xl">Optimize Home page  </h3>
-                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 overflow-hidden">
+                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between">
@@ -145,7 +145,7 @@
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Meta</p>
                         <h3 class="font-medium text-2xl">Add new emoji 🤲</h3>
-                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 overflow-hidden">
+                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between">
@@ -160,7 +160,7 @@
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Google LLC</p>
                         <h3 class="font-medium text-2xl">Integrate OpenAI API </h3>
-                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 overflow-hidden">
+                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between">
@@ -175,7 +175,7 @@
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Glassdoar</p>
                         <h3 class="font-medium text-2xl">Improve Job searching </h3>
-                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 overflow-hidden">
+                        <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between">
@@ -197,18 +197,20 @@
                     </div>
                     <div class="">
                         <!-- Button -->
-                        <button id="btn-clear-history" class="card-btn bg-blue-500 px-5 py-3 rounded-xl text-white">
+                        <button id="btn-clear-history" class="bg-blue-500 px-5 py-3 rounded-xl text-white">
                             Clear History
                         </button>
                     </div>
                 </div>
                 <!-- History -->
-                <div id="">
+                <div id="history-massage" class="p-4">
 
                 </div>
             </div>
         </section>
     </main>
+    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/time&date.js"></script> -->
 </body>
 
 </html>
