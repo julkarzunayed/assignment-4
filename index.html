@@ -7,11 +7,7 @@
     <title>DevBoard</title>
     <!-- tailwind CSS -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme {
-            --color-clifford: #da373d;
-        }
-    </style>
+
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +20,9 @@
             font-family: "Poppins", sans-serif;
             /* "bg-blue-100", "bg-yellow-100", "bg-green-100", "bg-orange-100", "bg-gray-100", "bg-red-100" */
         }
-        button:hover, #discover-something:hover{
+
+        button:hover,
+        #discover-something:hover {
             border: solid 1px rgb(156, 156, 156);
         }
     </style>
@@ -42,7 +40,7 @@
                 <span class="font-bold text-4xl">Board</span>
             </h1>
         </div>
-        <div class="flex  items-center gap-9">
+        <div class="home-items flex  items-center gap-9">
             <div class="flex items-center gap-4 rounded-full py-3 px-5 bg-[#F4F7FF]">
                 <img src="assets/checkbox.png" alt="">
                 <h2 id="total-completed-task" class="text-3xl font-bold">23</h2>
@@ -51,12 +49,18 @@
                 <img src="assets/theme-btn.png" alt="">
             </div>
         </div>
+        <!-- Blogs button -->
+        <div class="blogs-items ">
+            <button id="btn-back-to-desk" class="bg-blue-500 px-5 py-3 rounded-lg text-white">
+                Back to Desk
+            </button>
+        </div>
 
     </nav>
     <!-- Main start -->
     <main class="max-w-[1536px] mx-auto">
-        <section class="flex mt-4 content-stretch gap-3">
-
+        <!-- Home page Items -->
+        <section class="home-items flex mt-4 content-stretch gap-3">
             <div class="bg-white rounded-2xl max-w-[1146px] flex-4">
                 <!-- Discover something New -->
                 <!-- Container -->
@@ -70,7 +74,8 @@
                             <h3 id="task-assigned" class="font-bold text-3xl">06</h3>
                         </div>
                     </div>
-                    <div id="discover-something" class="grow flex items-center gap-4 rounded-xl p-8 bg-gradient-to-r from-blue-600 to-blue-400">
+                    <div id="discover-something"
+                        class="grow flex items-center gap-4 rounded-xl p-8 bg-gradient-to-r from-blue-600 to-blue-400">
                         <div class="">
                             <img src="assets/board.png" alt="">
                         </div>
@@ -99,7 +104,8 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">ShopEase</p>
                         <h3 class="font-medium text-2xl">Fix Mobile Button Issue </h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip">
-                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -114,7 +120,8 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">CloudSync</p>
                         <h3 class="font-medium text-2xl">Add Dark Mode</h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
-                            Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                            Store the user's preference in localStorage, update CSS variables dynamically, and apply a
+                            smooth transition effect.
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -129,7 +136,8 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">SwiftPay</p>
                         <h3 class="font-medium text-2xl">Optimize Home page  </h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
-                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -139,12 +147,13 @@
                             <button id="" class="card-btn bg-blue-500 px-5 rounded-xl text-white">Completed</button>
                         </div>
                     </div>
-                    <!-- Card-04  --> 
+                    <!-- Card-04  -->
                     <div class="card rounded-xl bg-[#F4F7FF] p-8 space-y-4">
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Meta</p>
                         <h3 class="font-medium text-2xl">Add new emoji 🤲</h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
-                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -159,7 +168,8 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Google LLC</p>
                         <h3 class="font-medium text-2xl">Integrate OpenAI API </h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
-                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -174,7 +184,8 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg">Glassdoar</p>
                         <h3 class="font-medium text-2xl">Improve Job searching </h3>
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
-                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly and ensure onClick works properly
                         </p>
                         <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
@@ -206,9 +217,87 @@
                 </div>
             </div>
         </section>
+        <!-- Blogs container -->
+        <section class="blogs-items mt-4">
+            <h2 class="text-center text-3xl font-semibold">Blogs</h2>
+            <!-- Blogs container -->
+            <div class="">
+                <!-- Blog -->
+                <div class="mt-5">
+                    <div class="bg-white px-3 py-4 border-dashed border-b-2 border-[#3752FD20]">
+                        <h3 class="text-xl font-bold ">
+                            Question-1: What are the different ways to select an element in the DOM?
+                        </h3>
+                    </div>
+                    <div class="bg-white px-3 py-4">
+                        <p class="text-gray-600 text-xl">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam, ab laboriosam
+                            laborum culpa quam vel odio commodi id deserunt. laboriosam laborum culpa quam vel odio
+                        </p>
+                    </div>
+                </div>
+                <!-- Blog -->
+                <div class="mt-5">
+                    <div class="bg-white px-3 py-4 border-dashed border-b-2 border-[#3752FD20]">
+                        <h3 class="text-xl font-bold ">
+                            Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                        </h3>
+                    </div>
+                    <div class="bg-white px-3 py-4">
+                        <p class="text-gray-600 text-xl">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam, ab laboriosam
+                            laborum culpa quam vel odio commodi id deserunt. laboriosam laborum culpa quam vel odio
+                        </p>
+                    </div>
+                </div>
+                <!-- Blog -->
+                <div class="mt-5">
+                    <div class="bg-white px-3 py-4 border-dashed border-b-2 border-[#3752FD20]">
+                        <h3 class="text-xl font-bold ">
+                            Question-3: What is event delegation in the DOM?
+                        </h3>
+                    </div>
+                    <div class="bg-white px-3 py-4">
+                        <p class="text-gray-600 text-xl">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam, ab laboriosam
+                            laborum culpa quam vel odio commodi id deserunt. laboriosam laborum culpa quam vel odio
+                        </p>
+                    </div>
+                </div>
+                <!-- Blog -->
+                <div class="mt-5">
+                    <div class="bg-white px-3 py-4 border-dashed border-b-2 border-[#3752FD20]">
+                        <h3 class="text-xl font-bold ">
+                            Question-4: What is event bubbling in the DOM?
+                        </h3>
+                    </div>
+                    <div class="bg-white px-3 py-4">
+                        <p class="text-gray-600 text-xl">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam, ab laboriosam
+                            laborum culpa quam vel odio commodi id deserunt. laboriosam laborum culpa quam vel odio
+                        </p>
+                    </div>
+                </div>
+                <!-- Blog -->
+                <div class="mt-5">
+                    <div class="bg-white px-3 py-4 border-dashed border-b-2 border-[#3752FD20]">
+                        <h3 class="text-xl font-bold ">
+                            Question-5: How do you create, add, and remove elements using JavaScript?
+                        </h3>
+                    </div>
+                    <div class="bg-white px-3 py-4">
+                        <p class="text-gray-600 text-xl">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam, ab laboriosam
+                            laborum culpa quam vel odio commodi id deserunt. laboriosam laborum culpa quam vel odio
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="scripts/script.js"></script>
     <script src="scripts/theme.js"></script>
+    <script src="scripts/toggle.js"></script>
     <!-- <script src="scripts/time&date.js"></script> -->
 </body>
 
