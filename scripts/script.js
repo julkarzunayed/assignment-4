@@ -52,29 +52,18 @@ for (let i = 0; i < button.length; i++) {
 
 document.getElementById("btn-clear-history")
     .addEventListener("click", function(event){
-        // const historyMassage = document.getElementsByClassName("massages-of-history");
-        // const 
-        // let childs = historyMassage.lastElementChild
-        // // for(){
-        // //     historyMassage.removeChild(child);
-        // //     childs = historyMassage.lastElementChild
-        
-        // // }
-        // // console.log('hi')
-        // console.log(historyMassage.length)
-        // // console.log(childs)
         let historyContainer = document.getElementById("history-massage");
         let child = historyContainer.lastElementChild;
-        console.log(child)
         while(child){
-            console.log(child)
             historyContainer.removeChild(child);
             child = historyContainer.lastElementChild
-
         }
-        console.log(historyContainer);
-        console.log(child);
+    })
 
 
-
+//discover Something New 
+document.getElementById("discover-something")
+    .addEventListener('click', function(){
+        // location.href = ""
+        window.location.href = "../discover.html"
     })

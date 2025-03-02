@@ -22,17 +22,15 @@
     <style>
         body {
             font-family: "Poppins", sans-serif;
-
+            /* "bg-blue-100", "bg-yellow-100", "bg-green-100", "bg-orange-100", "bg-gray-100", "bg-red-100" */
         }
-
-        div {
-            /* justify-content: stretch; */
-
+        button:hover, #discover-something:hover{
+            border: solid 1px rgb(156, 156, 156);
         }
     </style>
 </head>
 
-<body class=" h-screen bg-[#ecf1ff] px-5 ">
+<body id="body" class=" h-screen bg-blue-100 ">
     <!-- Navbar start -->
     <nav class="max-w-[1536px] mx-auto flex justify-between bg-white p-6 rounded-2xl mt-6" id="">
         <div class=" flex items-center gap-2">
@@ -49,7 +47,7 @@
                 <img src="assets/checkbox.png" alt="">
                 <h2 id="total-completed-task" class="text-3xl font-bold">23</h2>
             </div>
-            <div class="rounded-full p-3 bg-[#F4F7FF]">
+            <div id="btn-theme" class="rounded-full p-3 bg-[#F4F7FF]">
                 <img src="assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -72,12 +70,12 @@
                             <h3 id="task-assigned" class="font-bold text-3xl">06</h3>
                         </div>
                     </div>
-                    <div class="grow flex items-center gap-4 rounded-xl p-8 bg-gradient-to-r from-blue-600 to-blue-400">
+                    <div id="discover-something" class="grow flex items-center gap-4 rounded-xl p-8 bg-gradient-to-r from-blue-600 to-blue-400">
                         <div class="">
                             <img src="assets/board.png" alt="">
                         </div>
                         <div class="text-white">
-                            <p class="">
+                            <p class="text-2xl font-medium">
                                 Discover Something <br>
                                 New Today!
                             </p>
@@ -103,7 +101,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -118,7 +116,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -133,7 +131,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -148,7 +146,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -163,7 +161,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -178,7 +176,7 @@
                         <p class="bg-white px-4 py-2 w-fit rounded-lg text-gray-500 h-24 overflow-clip ">
                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between pt-3 border-dashed border-t-2 border-[#3752FD20]">
                             <div class="">
                                 <p class="text-gray-600">Deadline</p>
                                 <p class="font-medium">21 March 2025</p>
@@ -188,7 +186,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Activity Log  -->
             <div class="bg-white rounded-2xl max-w-[366px] flex-1">
                 <div class="p-6 flex flex-col items-center gap-4 border-dashed border-b-2 border-[#3752FD20] ">
                     <div class="flex gap-3 font-medium text-xl">
@@ -210,6 +208,7 @@
         </section>
     </main>
     <script src="scripts/script.js"></script>
+    <script src="scripts/theme.js"></script>
     <!-- <script src="scripts/time&date.js"></script> -->
 </body>
 
